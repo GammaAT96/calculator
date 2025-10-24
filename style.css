@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
 }
-.screen{
+.display{
     background-color: #222;
     color: white;
     font-size: 2em;
@@ -47,7 +47,7 @@
     border: 2px green solid; 
     box-sizing: border-box; 
 }
-.numpad div{
+.numpad button{
     background-color: #e0e0e0;
     border: 2px solid black;
     border-radius: 5px;
@@ -59,7 +59,7 @@
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     transition: background-color 0.3s ease;
 }
-.operator div{
+.operator button{
     background-color: #ff9500;
     border: 2px solid black;
     font-size: 1.5rem;
