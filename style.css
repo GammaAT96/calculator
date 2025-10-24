@@ -1,0 +1,72 @@
+.body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+.screen{
+    background-color: #222;
+    color: white;
+    font-size: 2em;
+    padding: 20px;
+    text-align: right;
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    height: 300px;
+
+}
+.calc_ui{
+    display: flex; /* This places the children (.numpad and .operator) horizontally */
+    height: 300px; /* This gives a fixed height to the entire button area */
+    gap: 10px; 
+    width: 100%;
+    border:2px pink solid;
+}
+.numpad{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* ADD: Explicitly set the rows to align with the operator grid */
+    grid-template-rows: repeat(4, 1fr); 
+    border:2px blue solid;
+    gap: 10px;
+    width:50%;
+    height:100%;
+    box-sizing: border-box;
+}
+.operator{
+    width: 50%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    /* FIX: Change this to 4 rows to accommodate the 7 buttons */
+    grid-template-rows: repeat(4, 1fr); 
+    gap: 10px;
+    border: 2px green solid; 
+    box-sizing: border-box; 
+}
+.numpad div{
+    background-color: #e0e0e0;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 1.5em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+}
+.operator div{
+    background-color: #ff9500;
+    border: 2px solid black;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+}
